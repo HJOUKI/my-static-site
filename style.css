@@ -1,0 +1,35 @@
+/* 기본 리셋 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 전체 화면 중앙 정렬 */
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: #f5f5f5; /* 배경색 (원하면 제거) */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 컨테이너 */
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/* 명함 이미지 */
+.card {
+    width: 90vw;           /* 모바일 화면 기준 */
+    max-width: 350px;      /* 실제 명함 느낌 */
+    aspect-ratio: 9 / 5;   /* 명함 비율 (가로형) */
+
+    object-fit: contain;
+    border-radius: 8px;    /* 모서리 둥글게 (선택) */
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15); /* 살짝 그림자 */
+}
